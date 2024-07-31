@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Submit Your Details</h1>
+        <form id="detailsForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="rank">Rank:</label>
+            <select id="rank" name="rank" required>
+                <option value="">Select Rank</option>
+                <option value="first">First Rank</option>
+                <option value="second">Second Rank</option>
+                <option value="third">Third Rank</option>
+            </select>
+
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id-number" placeholder="#000000" required pattern="#\d{6}">
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
